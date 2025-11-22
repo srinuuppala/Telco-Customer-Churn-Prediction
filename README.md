@@ -62,17 +62,17 @@ df.reset_index(drop=True, inplace=True)
 🔎 2. Exploratory Data Analysis (EDA)
 Key Findings:
 
-Churn data is imbalanced (73% No, 27% Yes).
+- Churn data is imbalanced (73% No, 27% Yes).
 
-Month-to-month contracts show the highest churn.
+- Month-to-month contracts show the highest churn.
 
-Electronic check customers churn more often.
+- Electronic check customers churn more often.
 
-Fiber optic users churn more than DSL users.
+- Fiber optic users churn more than DSL users.
 
-Lower-tenure customers churn significantly more.
+- Lower-tenure customers churn significantly more.
 
-Lack of Tech Support/Online Security increases churn probability.
+- Lack of Tech Support/Online Security increases churn probability.
 
 
 ---
@@ -80,15 +80,15 @@ Lack of Tech Support/Online Security increases churn probability.
 
 🛠️ 3. Preprocessing
 
-Churn: Yes → 1, No → 0
+- Churn: Yes → 1, No → 0
 
-One-Hot Encoding for categorical features
+- One-Hot Encoding for categorical features
 
-Train-test split
+- Train-test split
 
-Scaling numerical columns (StandardScaler)
+- Scaling numerical columns (StandardScaler)
 
-Prepared full feature matrix for ML models
+- Prepared full feature matrix for ML models
 
 ---
 
@@ -155,11 +155,11 @@ Top churn drivers:
 
 Artifacts saved:
 
-churn_xgb_model.pkl
+- churn_xgb_model.pkl
 
-scaler.pkl
+- scaler.pkl
 
-feature_columns.pkl
+- feature_columns.pkl
 
 ```python
 pickle.dump(model, open("churn_xgb_model.pkl","wb"))
@@ -173,13 +173,13 @@ These files are used in the Streamlit app for real-time predictions.
 🌐 9. Streamlit Web App
 Features:
 
-Interactive customer input → predicts churn probability
+- Interactive customer input → predicts churn probability
 
-Upload CSV → batch predictions
+- Upload CSV → batch predictions
 
-Download results
+- Download results
 
-Clean UI with all customer fields
+- Clean UI with all customer fields
 
 ```bash
 conda activate base
@@ -193,21 +193,21 @@ streamlit run app.py
 
 A full business dashboard built with Power BI includes:
 
-Total Customers, Churn Rate, Avg Churn Probability
+- Total Customers, Churn Rate, Avg Churn Probability
 
-Churn by Contract Type
+- Churn by Contract Type
 
-Churn by Internet Service
+- Churn by Internet Service
 
-Churn by Payment Method
+- Churn by Payment Method
 
-Tenure vs Churn
+- Tenure vs Churn
 
-Customer Risk Segmentation
+- Customer Risk Segmentation
 
-Service Impact Matrix
+- Service Impact Matrix
 
-High-value customer analysis
+- High-value customer analysis
 
 ---
 
@@ -233,17 +233,17 @@ High-value customer analysis
 
 This project successfully delivers:
 
-A full ML pipeline
+- A full ML pipeline
 
-Interactive web app
+- Interactive web app
 
-Business insights dashboard
+- Business insights dashboard
 
-High recall churn prediction model
+- High recall churn prediction model
 
-Deployment-ready code
+- Deployment-ready code
 
-Clean documentation
+- Clean documentation
 
 ---
 
@@ -251,8 +251,10 @@ Clean documentation
 
 For project feedback or collaboration, feel free to reach out!
 
-```contact
+```WhatsApp Number
 7981832369
+```
+```Gmail
 srinuuppala410@gmail.com
 ```
 
