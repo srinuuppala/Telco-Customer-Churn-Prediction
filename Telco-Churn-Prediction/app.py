@@ -254,7 +254,7 @@ if uploaded_file is not None:
 
 # Option to load sample dataset from local path (useful in your environment)
 st.header("Example: Load sample dataset from disk")
-sample_path = r"D:\ML-DL\Pyhton_notebooks\WA_Fn_Use_Telco_Customer_Churn.csv"  # update filename if needed
+sample_path = r"Telco-Churn-Prediction/ Telco_Customer_Churn.csv"  # update filename if needed
 
 st.write(f"Sample dataset path: `{sample_path}`")
 if st.button("Load example sample CSV from disk"):
@@ -274,5 +274,6 @@ if st.button("Load example sample CSV from disk"):
             st.download_button("Download sample predictions", data=buff, file_name="sample_preds.csv", mime="text/csv")
     except Exception as e:
         st.error(f"Unable to load sample dataset: {e}")
+
 
 
