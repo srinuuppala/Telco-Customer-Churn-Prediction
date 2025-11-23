@@ -225,7 +225,7 @@ st.write("Upload a CSV with raw telco columns (same column names as original dat
 uploaded_file = st.file_uploader("Upload CSV file", type=["csv"])
 
 # small helpful link: default sample dataset path (local)
-st.info("Tip: sample dataset path (local): `/mnt/data/WA_Fn-UseC_-Telco-Customer-Churn.csv`")
+st.info("Tip: sample dataset path (local): `https://github.com/srinuuppala/Telco-Customer-Churn-Prediction/blob/main/Telco-Churn-Prediction/%20Telco_Customer_Churn.csv`")
 
 if uploaded_file is not None:
     try:
@@ -274,6 +274,7 @@ if st.button("Load example sample CSV from disk"):
             st.download_button("Download sample predictions", data=buff, file_name="sample_preds.csv", mime="text/csv")
     except Exception as e:
         st.error(f"Unable to load sample dataset: {e}")
+
 
 
 
