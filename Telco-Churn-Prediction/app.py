@@ -11,9 +11,9 @@ from io import BytesIO
 # -----------------------
 @st.cache_resource
 def load_artifacts():
-    model_path = r"D:\ML-DL\Pyhton_notebooks\churn_xgb_model.pkl"
-    scaler_path = r"D:\ML-DL\Pyhton_notebooks\scaler.pkl"
-    cols_path = r"D:\ML-DL\Pyhton_notebooks\feature_columns.pkl"
+    model_path = r"Telco-Churn-Prediction/churn_xgb_model.pkl"
+    scaler_path = r"Telco-Churn-Prediction/scaler.pkl"
+    cols_path = r"Telco-Churn-Prediction/feature_columns.pkl"
 
     import os
     # check existence
@@ -274,4 +274,5 @@ if st.button("Load example sample CSV from disk"):
             st.download_button("Download sample predictions", data=buff, file_name="sample_preds.csv", mime="text/csv")
     except Exception as e:
         st.error(f"Unable to load sample dataset: {e}")
+
 
